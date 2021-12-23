@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Heroes | TheBest</title>
+	<meta charset="utf-8">
+	<meta name="Author" content="Dickson,Wilson,Siaw Zhen">
+	<meta name="Description" content="My hero academia">
+	<meta name="Keywords" content="Hero,Villain,Academia">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="images/logo.png" type="image/x-icon">
+	
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+</head>
+
+<body class="cover_body">
+<header>
+	<nav class="navbar">
+		<ul class="navigation">
+			<li  class="MenuSelect logo"><a href="index.html"><img src="images/logo.png" alt="This is a logo" title="Click here to go to homepage" width="150" height="100"></a></li>
+			<li class="MenuSelect"><a href="character.html" class="selection">Character</a>
+				<div class="dropdown-selection">
+				<a href="hero.html">Hero</a>
+				<a href="villain.html">Villain</a>
+				</div>
+			</li>
+			
+			<li class="MenuSelect"><a href="episodes.html" class="selection">Episodes</a></li>
+			
+			<li class="MenuSelect"><a href="media.html" class="selection">Media</a>
+				<div class="dropdown-selection">
+		    		<a href="gallery.html">Gallery</a>
+					<a href="music.html">Music</a>
+				</div>
+			</li>
+			
+			<li class="MenuSelect"><a href="gabout.html" class="selection">About</a>
+				<div class="dropdown-selection">
+					<a href="author.html">Author</a>
+					<a href="thebest.html">TheBest</a>
+					<a href="about.html">Client</a>
+				</div>
+			</li>
+			
+			<li class="MenuSelect"><a href="others.html" class="selection">Others</a>
+				<div class="dropdown-selection">
+					<a href="awards.html">Awards</a>
+					<a href="events.html">Events</a>
+				</div>
+			</li>
+			
+			<li class="MenuSelect"><a href="feedback.html" class="selection">Feedback</a></li>
+		</ul>
+	</nav>
+</header>
+
+<article>
+	<br>
+	<h1 class="hero_h1">THE HEROES</h1>
+    <div class="slideshow-container">
+	
+		<div class="mySlides fade">
+			<img src="images/back1.jpg" alt="Slideshow image" style="width:100%">
+		</div>
+		
+		<div class="mySlides fade">
+			<img src="images/plusultra.jpg" alt="Slideshow image" style="width:100%">
+		</div>
+		
+		<div class="mySlides fade">
+			<img src="images/banner.jpg" alt="Slideshow image" style="width:100%">
+		</div>
+		
+		<div class="mySlides fade">
+			<img src="images/shoto.png" alt="Slideshow image" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<img src="images/9.jpg" alt="Slideshow image" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<img src="images/hero.jpg" alt="Slideshow image" style="width:100%">
+		</div>
+		<!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+		<span class="dot" onclick="currentSlide(4)"></span> 
+		<span class="dot" onclick="currentSlide(5)"></span> 
+		<span class="dot" onclick="currentSlide(6)"></span> 
+	</div>
+
+	<script>
+			var slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1} 
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none"; 
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block"; 
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+	
+	<div class="hero">	
+		<div class="hero_character1">
+			<a data-fancybox="gallery" href="images/izuku.jpg" data-caption="Izuku Midoriya"><img src="images/izuku.jpg" alt="izuku midroriya" class="hero_image1"></a>
+			<div class="hero_content1">
+			<h2 class="hero_h22">IZUKU MIDORIYA</h2>
+			<p>Birthday : 7/15</p>
+			<p>Height : 166cm</p>
+			<p>Izuku is a very timid, helpful and polite boy, frequently overreacting to abnormal situations with exaggerated expressions. Due to being bullied since childhood for being born without a Quirk, he is initially portrayed as insecure, being more reserved and not self-expressive, especially in front of Katsuki Bakugo, who constantly subdued him for his aspirations to be a hero.</p>
+			</div>
+		</div>
+		
+		<div class="hero_character">
+			<a data-fancybox="gallery" href="images/bakugo.jpg" data-caption="Katsuki Bakugo"><img src="images/bakugo.jpg" alt="Katsuki Bakugo" class="hero_image"></a>
+			<div class="hero_content">
+			<h2 class="hero_h2">KATSUKI BAKUGO</h2>
+			<p>Birthday : 4/20</p>
+			<p>Height : 172cm</p>
+			<p>Katsuki is a very crude, violent, arrogant, and aggressive person. Having an attitude reminiscent of a teenage delinquent, Katsuki tends to come off as very anti-heroic, if not downright villainous.</p>
+			</div>
+	</div>
+		
+	<div class="hero_character1">
+		<a data-fancybox="gallery" href="images/tokoyami.jpg" data-caption="Fumikage Tokoyami"><img src="images/tokoyami.jpg" alt="Fumikage Tokoyami" class="hero_image1"></a>
+		<div class="hero_content1">
+		<h2 class="hero_h22">FUMIKAGE TOKOYAMI</h2>
+		<p>Birthday : 10/30</p>
+		<p>Height : 158cm</p>
+		<p>Fumikage has a reserved, serious and focused personality. Though he does not talk very much, he has been shown directly ignoring questions or requests that seem in some way pointless while he talks to other people as some sort of ongoing joke.</p>
+		</div>
+	</div>
+	<div class="hero_character">
+		<a data-fancybox="gallery" href="images/shoto.jpg" data-caption="Shoto Todoroki"><img src="images/shoto.jpg" alt="Shoto Todoroki" class="hero_image"></a>
+		<div class="hero_content">
+		<h2 class="hero_h2">SHOTO TODOROKI</h2>
+		<p>Birthday : 1/11</p>
+		<p>Height : 176cm</p>
+		<p>Shoto has a cold, aloof personality which stems from his harsh upbringing. He is quite seasoned in battle, being able to stay calm and composed even while fighting real villains.</p>
+		</div>
+	</div>
+	<div class="hero_character1">
+		<a data-fancybox="gallery" href="images/tsuyu.jpg" data-caption="Tsuyu Asui"><img src="images/tsuyu.jpg" alt="Tsuyu Asui" class="hero_image1"></a>
+		<div class="hero_content1">
+		<h2 class="hero_h22">TSUYU ASUI</h2>
+		<p>Birthday : 2/12</p>
+		<p>Height : 150cm</p>
+		<p>Tsuyu is a straightforward and laid-back individual who always says what's on her mind and what she thinks about others. She prefers to be called "Tsu", but has stated she only wants people she views as friends to refer to her as such.</p>
+		</div>
+	</div>
+	<div class="hero_character">
+		<a data-fancybox="gallery" href="images/ochaco.jpg" data-caption="Ochaco Uraraka"><img src="images/ochaco.jpg" alt="Ochaco Uraraka" class="hero_image"></a>
+		<div class="hero_content">
+		<h2 class="hero_h2">OCHACO URARAKA</h2>
+		<p>Birthday : 12/27</p>
+		<p>Height : 156cm</p>
+		<p>Ochaco is a bubbly, lively person who thinks about everything positively, while still being objective enough to seeing flaws and virtues of something or someone, noticing their differences but respect them as she thinks all things/beings complement each other.</p>
+		</div>
+	</div>
+	<div class="hero_character1">
+		<a data-fancybox="gallery" href="images/momo.jpg" data-caption="Momo Yaoyorozu"><img src="images/momo.jpg" alt="Momo Yaoyorozu" class="hero_image1"></a>
+		<div class="hero_content1">
+		<h2 class="hero_h22">MOMO YAOYOROZU</h2>
+		<p>Birthday : 9/23</p>
+		<p>Height : 173cm</p>
+		<p>Momo is a very intelligent, dedicated person who acts as a natural leader. She is generally very level-headed and calm even in very dangerous situations, but she isn't above falling into a panic.</p>
+		</div>
+	</div>
+	<div class="hero_character">
+		<a data-fancybox="gallery" href="images/jiro.jpg" data-caption="Kyoka Jiro"><img src="images/jiro.jpg" alt="Kyoka Jiro" class="hero_image"></a>
+		<div class="hero_content">
+		<h2 class="hero_h2">KYOKA JIRO</h2>
+		<p>Birthday : 8/1</p>
+		<p>Height : 154cm</p>
+		<p>Kyoka has a somewhat pragmatic, unenthusiastic and teasing personality which is shown a lot to those she finds irritating, in particular, her fellow classmate Denki Kaminari, who happens to be the most common target of her snarky comments.</p>
+		</div>
+	</div>
+	<div class="hero_character1">
+		<a data-fancybox="gallery" href="images/denki.jpg" data-caption="Denki Kaminari"><img src="images/denki.jpg" alt="Denki Kaminari" class="hero_image1"></a>
+		<div class="hero_content1">
+		<h2 class="hero_h22">DENKI KAMINARI</h2>
+		<p>Birthday : 6/29</p>
+		<p>Height : 168cm</p>
+		<p>Denki is somewhat flirtatious towards the girls of his class (and even the ones from other classes), trying to pass himself off as a smooth talker.</p>
+		</div>
+	</div>
+	<div class="hero_character">
+		<a data-fancybox="gallery" href="images/minoru.jpg" data-caption="Minoru Mineta"><img src="images/minoru.jpg" alt="Minoru Mineta" class="hero_image"></a>
+		<div class="hero_content">
+		<h2 class="hero_h2">MINORU MINETA</h2>
+		<p>Birthday : 10/8</p>
+		<p>Height : 108cm</p>
+		<p>Minoru is perverted to the point of infamy, which makes him unpopular with the girls and even some of the boys, who consider his interests and mannerisms depraved.</p>
+		</div>
+	</div>
+	<div class="hero_character1">
+		<a data-fancybox="gallery" href="images/mina.jpg" data-caption="Mina Ashido"><img src="images/mina.jpg" alt="Mina Ashido" class="hero_image1"></a>
+		<div class="hero_content1">
+		<h2 class="hero_h22">MINA ASHIDO</h2>
+		<p>Birthday : 7/30</p>
+		<p>Height : 159cm</p>
+		<p>Mina is cheerful and most of the time seen with a smile on her face. She is easily excited, but also very emotional and easily brought to tears in various situations, out of relief, out of sadness and out of frustration.</p>
+		</div>
+	</div>
+	<div class="hero_character">
+		<a data-fancybox="gallery" href="images/bakugo.jpg" data-caption="Toru Hagakure"><img src="images/toru.jpg" alt="Toru Hagakure" class="hero_image"></a>
+		<div class="hero_content">
+		<h2 class="hero_h2">TORU HAGAKURE</h2>
+		<p>Birthday : 6/16</p>
+		<p>Height : 152cm</p>
+		<p>Toru is a bubbly, cheery, and easygoing girl that does most things with an upbeat attitude, even if manipulated to do so. She is very socially eager and appears to like shopping.</p>
+		</div>
+	</div>
+	<div class="hero_character1">
+		<a data-fancybox="gallery" href="images/eijiro.jpg" data-caption="Eijiro Kirishima"><img src="images/eijiro.jpg" alt="Eijiro Kirishima" class="hero_image1"></a>
+		<div class="hero_content1">
+		<h2 class="hero_h22">EIJIRO KIRISHIMA</h2>
+		<p>Birthday : 10/16</p>
+		<p>Height : 170cm</p>
+		<p>Eijiro is a very boisterous, outgoing guy with a fondness for the concept of manliness, often using the terms "manly" and "unmanly" to describe stuff he does or doesn't like.</p>
+		</div>
+	</div>
+	<div class="hero_character">
+		<a data-fancybox="gallery" href="images/mezo.jpg" data-caption="Mezo Shoji"><img src="images/mezo.jpg" alt="Mezo Shoji" class="hero_image"></a>
+		<div class="hero_content">
+		<h2 class="hero_h2">MEZO SHOJI</h2>
+		<p>Birthday : 2/15</p>
+		<p>Height : 187cm</p>
+		<p>Despite his frightening appearance, Mezo is a very friendly and gentle person who will work nicely with anyone. He is not the type to hold grudges, showing no ill will towards those that harm him unwillingly.</p>
+		</div>
+	</div>
+	<div class="hero_character1">
+		<a data-fancybox="gallery" href="images/ojiro.jpg" data-caption="Mashirao Ojiro"><img src="images/ojiro.jpg" alt="Mashirao Ojiro" class="hero_image1"></a>
+		<div class="hero_content1">
+		<h2 class="hero_h22">MASHIRAO OJIRO</h2>
+		<p>Birthday : 5/28</p>
+		<p>Height : 169cm</p>
+		<p>Mashirao has a very calm and noble attitude as well as a very deep sense of dignity, which prevents him from accepting results that he doesn't feel were earned with his own abilities.</p>
+		</div>
+	</div>
+	<div class="hero_character">
+		<a data-fancybox="gallery" href="images/yuga.jpg" data-caption="Yuga Aoyama"><img src="images/yuga.jpg" alt="Yuga Aoyama" class="hero_image"></a>
+		<div class="hero_content">
+		<h2 class="hero_h2">YUGA AOYAMA</h2>
+		<p>Birthday : 5/30</p>
+		<p>Height : 168cm</p>
+		<p>Yuga is a vain and prideful person, thinking of himself as superior to the rest of his classmates, especially in regards to his Quirk. He exhibits extremely flamboyant mannerisms, is fond of posing and likes to grab the attention of those around him, although he frequently gets ignored.</p>
+		</div>
+	</div>
+	<div class="hero_character1">
+		<a data-fancybox="gallery" href="images/koda.jpg" data-caption="Koji Koda"><img src="images/koda.jpg" alt="Koji Koda" class="hero_image1"></a>
+		<div class="hero_content1">
+		<h2 class="hero_h22">KOJI KODA</h2>
+		<p>Birthday : 2/1</p>
+		<p>Height : 186cm</p>
+		<p>Koji is a very shy and quiet person. As such, he rarely speaks and prefers using sign language to communicate with his classmates. According to Fumikage Tokoyami, he is very good at keeping secrets.</p>
+		</div>
+	</div>
+	<div class="hero_character">
+		<a data-fancybox="gallery" href="images/sero.jpg" data-caption="Hanta Sero"><img src="images/sero.jpg" alt="Hanta Sero" class="hero_image"></a>
+		<div class="hero_content">
+		<h2 class="hero_h2">HANTA SERO</h2>
+		<p>Birthday : 7/28</p>
+		<p>Height : 177cm</p>
+		<p>Hanta is a very friendly person and has proven to be one of the more sociable members of Class 1-A. He can be loud and showy at times, often trying to impress his peers with his Quirk.</p>
+		</div>
+	</div>
+	<div class="hero_character1">
+		<a data-fancybox="gallery" href="images/sato.jpg" data-caption="Rikido Sato"><img src="images/sato.jpg" alt="Rikido Sato" class="hero_image1"></a>
+		<div class="hero_content1">
+		<h2 class="hero_h22">RIKIDO SATO</h2>
+		<p>Birthday : 6/19</p>
+		<p>Height : 185cm</p>
+		<p>Rikido has an interest in sweets and baking, the latter being a useful skill to have due to his Quirk.He is surprisingly talented at making sweets, conquering his classmates with his food.</p>
+		</div>
+	</div>
+	
+	<div class="hero_character">
+		<a data-fancybox="gallery" href="images/lida.jpg" data-caption="Tenya Lida"><img src="images/lida.jpg" alt="Tenya Lida" class="hero_image"></a>
+		<div class="hero_content">
+		<h2 class="hero_h2">TENYA IIDA</h2>
+		<p>Birthday : 8/22</p>
+		<p>Height : 179cm</p>
+		<p>Tenya may look severe, but he's actually a very straightforward, earnest, intelligent and serious person. He tends to take everything very seriously, and because of this, he has a habit of jumping to conclusions, then enthusiastically speaking or acting based on said conclusions.</p>
+		</div>
+	</div>
+
+	<script>
+			$('[data-fancybox]').fancybox({
+				loop: true,
+				buttons: [
+					"zoom",
+					"share",
+					"slideShow",
+					"fullScreen",
+					"download",
+					"thumbs",
+					"close"
+				],
+				 animatihero_oneffect: "slide",
+				 transitihero_oneffect: "zoom-in-out",
+			});
+
+	</script>
+</div>
+</article>
+<footer>
+<p>&copy;<a href="thebest.html" title="Developers"><span id="teamname"> 2018 TheBest</span> </a>| Page developed by - Dickson - Wilson - Siaw Zhen - | Last updated: 29/6/2018 10:24am</p>
+</footer>
+</body>
+</html>

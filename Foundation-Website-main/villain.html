@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Villains | TheBest</title>
+	<meta charset="utf-8">
+	<meta name="Author" content="Dickson,Wilson,Siaw Zhen">
+	<meta name="Description" content="My hero academia">
+	<meta name="Keywords" content="Hero,Villain,Academia">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="images/logo.png" type="image/x-icon">
+	
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+</head>
+
+<body class="cover_body">
+<header>
+	<nav class="navbar">
+		<ul class="navigation">
+			<li  class="MenuSelect logo"><a href="index.html"><img src="images/logo.png" alt="This is a logo" title="Click here to go to homepage" width="150" height="100"></a></li>
+			<li class="MenuSelect"><a href="character.html" class="selection">Character</a>
+				<div class="dropdown-selection">
+				<a href="hero.html">Hero</a>
+				<a href="villain.html">Villain</a>
+				</div>
+			</li>
+			
+			<li class="MenuSelect"><a href="episodes.html" class="selection">Episodes</a></li>
+			
+			<li class="MenuSelect"><a href="media.html" class="selection">Media</a>
+				<div class="dropdown-selection">
+		    		<a href="gallery.html">Gallery</a>
+					<a href="music.html">Music</a>
+				</div>
+			</li>
+			
+			<li class="MenuSelect"><a href="gabout.html" class="selection">About</a>
+				<div class="dropdown-selection">
+					<a href="author.html">Author</a>
+					<a href="thebest.html">TheBest</a>
+					<a href="about.html">Client</a>
+				</div>
+			</li>
+			
+			<li class="MenuSelect"><a href="others.html" class="selection">Others</a>
+				<div class="dropdown-selection">
+					<a href="awards.html">Awards</a>
+					<a href="events.html">Events</a>
+				</div>
+			</li>
+			
+			<li class="MenuSelect"><a href="feedback.html" class="selection">Feedback</a></li>
+		</ul>
+	</nav>
+</header>
+
+<article>
+	<br>
+	<h1 class="villain_h1">THE VILLAINS</h1>
+    <div class="slideshow-container">
+	
+		<div class="mySlides fade">
+			<img src="images/villain5.jpg" alt="Slideshow image" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<img src="images/villain2.jpg" alt="Slideshow image" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<img src="images/villain1.jpg" alt="Slideshow image" style="width:100%">
+		</div>
+		
+		<div class="mySlides fade">
+			<img src="images/villain4.jpg" alt="Slideshow image" style="width:100%">
+		</div>
+		
+		<div class="mySlides fade">
+			<img src="images/back.jpg" alt="Slideshow image" style="width:100%">
+		</div>
+
+		<!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+		<span class="dot" onclick="currentSlide(4)"></span> 
+		<span class="dot" onclick="currentSlide(5)"></span> 
+	</div>
+
+	<script>
+			var slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1} 
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none"; 
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block"; 
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+	
+<div class="villain">	
+	<div class="villain_character">
+		<a data-fancybox="gallery" href="images/all.jpg" data-caption="All for one"><img src="images/all.jpg" alt="All for one" class="villain_image"></a>
+		<div class="villain_content">
+		<h2 class="villain_h2">ALL FOR ONE</h2>
+		<p>All For One is a psychopath and a misanthrope. He did not hesitate to exploit people for his own gain. It is implied that he is also very charismatic as he was able to quickly amass several villains for followers and rule over Japan.</p>
+		</div>
+	</div>
+	<div class="villain_character1">
+		<a data-fancybox="gallery" href="images/twice.jpg" data-caption="Twice"><img src="images/twice.jpg" alt="twice" class="villain_image1"></a>
+		<div class="villain_content1">
+		<h2 class="villain_h22">TWICE</h2>
+		<p>Twice has an explosive and lively personality. He appears to have a contradicting personality, insulting Dabi one moment then praising him in another. He is also contradictory in his speech, asking Himiko if someone hurt her when she was happy, and exclaiming it was cold when hit by Shoto's fire.</p>
+		</div>
+	</div>
+	<div class="villain_character">
+		<a data-fancybox="gallery" href="images/himiko.jpg" data-caption="Himiko Toga"><img src="images/himiko.jpg" alt="himiko toga" class="villain_image"></a>
+		<div class="villain_content">
+		<h2 class="villain_h2">HIMIKO TOGA</h2>
+		<p>Himiko is a very cheerful girl, to the point of smiling even after having presumably killed someone, displaying apparent sadistic tendencies.[5] Even when danger is imminent, as when Tomura Shigaraki was about to attack her, Himiko continues smiling.</p>
+		</div>
+	</div>
+	<div class="villain_character1">
+		<a data-fancybox="gallery" href="images/tomura.jpg" data-caption="Tomura Shigaraki"><img src="images/tomura.jpg" alt="tomura shigaraki" class="villain_image1"></a>
+		<div class="villain_content1">
+		<h2 class="villain_h22">TOMURA SHIGARAKI</h2>
+		<p>Tomura has a sinister and warped personality; he doesn't care for his or anyone else's life, and he will do whatever it takes to accomplish his goals. He has no qualms about tasks such as killing U.A. High School students in order to provoke All Might and threatening to kill dozens of civilians unless Izuku cooperated with him.</p>
+		</div>
+	</div>
+	<div class="villain_character">
+		<a data-fancybox="gallery" href="images/dabi.jpg" data-caption="Dabi"><img src="images/dabi.jpg" alt="dabi" class="villain_image"></a>
+		<div class="villain_content">
+		<h2 class="villain_h2">DABI</h2>
+		<p>Dabi is a stoic, aloof, confident, and focused individual who rarely shows emotion. He is intolerant of most people and can be very derisive. Dabi insulted Tomura immediately after meeting him and constantly does the same to his allies and his enemies.</p>
+		</div>
+	</div>
+	<div class="villain_character1">
+		<a data-fancybox="gallery" href="images/mr.jpg" data-caption="Mr.Compress"><img src="images/mr.jpg" alt="mr.compress" class="villain_image1"></a>
+		<div class="villain_content1">
+		<h2 class="villain_h22">MR.COMPRESS</h2>
+		<p>Mr.Compress is a showman at heart who likes to command every event he's apart of and be as flashy and entertaining as possible. He is talkative, humorous and arrogant with his allies and enemies alike.</p>
+		</div>
+	</div>
+	<div class="villain_character">
+		<a data-fancybox="gallery" href="images/muscular.jpg" data-caption="Muscular"><img src="images/muscular.jpg" alt="muscular" class="villain_image"></a>
+		<div class="villain_content">
+		<h2 class="villain_h2">MUSCULAR</h2>
+		<p>Befitting his appearance, Muscular has a very sadistic and bloodthirsty personality. He openly admits that he wants to use his quirk freely to kill. Muscular enjoys killing and tormenting those he fights, often saying "show me your blood!".</p>
+		</div>
+	</div>
+	<div class="villain_character1">
+		<a data-fancybox="gallery" href="images/nomu.jpg" data-caption="Nomu"><img src="images/nomu.jpg" alt="nomu" class="villain_image1"></a>
+		<div class="villain_content1">
+		<h2 class="villain_h22">NOMU</h2>
+		<p>Due to intensive body experimentation, Nomu is not able to speak or think for himself. To compensate for this inability, he is only capable of following orders and will do so without question, as shown when he follows Tomura's orders.</p>
+		</div>
+	</div>
+	<div class="villain_character">
+		<a data-fancybox="gallery" href="images/kurogiri.jpg" data-caption="Kurogiri"><img src="images/kurogiri.jpg" alt="Kurogiri" class="villain_image"></a>
+		<div class="villain_content">
+		<h2 class="villain_h2">KUROGIRI</h2>
+		<p>Kurogiri has a level-headed personality, which often serves to ground Tomura Shigaraki's immaturity. He is intensely loyal to both All For One and Tomura. He is very polite and well-spoken, even to enemies, which is shown when he greets the students and introduces himself in a formal manner.</p>
+		</div>
+	</div>
+	
+	<script>
+			$('[data-fancybox]').fancybox({
+				loop: true,
+				buttons: [
+					"zoom",
+					"share",
+					"slideShow",
+					"fullScreen",
+					"download",
+					"thumbs",
+					"close"
+				],
+				 animativillain_oneffect: "slide",
+				 transitivillain_oneffect: "zoom-in-out",
+			});
+	</script>
+</div>
+</article>
+<footer>
+<p>&copy;<a href="thebest.html" title="Developers"><span id="teamname"> 2018 TheBest</span> </a>| Page developed by - Dickson - Wilson - Siaw Zhen - | Last updated: 29/6/2018 10:24am</p>
+</footer>
+</body>
+</html>

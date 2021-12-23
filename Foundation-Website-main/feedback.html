@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Feedback | TheBest</title>
+	<meta charset="utf-8">
+	<meta name="Author" content="Dickson,Wilson,Siaw Zhen">
+	<meta name="Description" content="My hero academia">
+	<meta name="Keywords" content="Hero,Villain,Academia">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="images/logo.png" type="image/x-icon">
+</head>
+
+<body class="feedback_body">
+<header>
+	<nav class="navbar">
+		<ul class="navigation">
+			<li  class="MenuSelect logo"><a href="index.html"><img src="images/logo.png" alt="This is a logo" title="Click here to go to homepage" width="150" height="100"></a></li>
+			<li class="MenuSelect"><a href="character.html" class="selection">Character</a>
+				<div class="dropdown-selection">
+				<a href="hero.html">Hero</a>
+				<a href="villain.html">Villain</a>
+				</div>
+			</li>
+			
+			<li class="MenuSelect"><a href="episodes.html" class="selection">Episodes</a></li>
+			
+			<li class="MenuSelect"><a href="media.html" class="selection">Media</a>
+				<div class="dropdown-selection">
+		    		<a href="gallery.html">Gallery</a>
+					<a href="music.html">Music</a>
+				</div>
+			</li>
+			
+			<li class="MenuSelect"><a href="gabout.html" class="selection">About</a>
+				<div class="dropdown-selection">
+					<a href="author.html">Author</a>
+					<a href="thebest.html">TheBest</a>
+					<a href="about.html">Client</a>
+				</div>
+			</li>
+			
+			<li class="MenuSelect"><a href="others.html" class="selection">Others</a>
+				<div class="dropdown-selection">
+					<a href="awards.html">Awards</a>
+					<a href="events.html">Events</a>
+				</div>
+			</li>
+			
+			<li class="MenuSelect"><a href="feedback.html" class="selection">Feedback</a></li>
+		</ul>
+	</nav>
+</header>
+
+<article>
+	<div class="feedback">
+		<h1>HELLO</h1>
+	</div>
+	<fieldset>
+	<legend>PLEASE LET US KNOW YOUR EXPERIENCE!</legend>
+	<div class="form">
+		<form id="info" method="post" action="mailto:theb3st999899@gmail.com" enctype="text/plain">
+			<table>
+				<tr>
+					<td class="detail"><label for="name">Name</label></td>
+					<td colspan="3"><input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required="required"></td>
+				</tr>
+				<tr>
+					<td class="detail"><label for="email">Email</label></td>
+					<td colspan="3"><input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required="required"></td>
+				</tr>
+				<tr>
+					<td class="detail"><label for="number">Phone Number</label></td>
+					<td colspan="3"><input type="number" id="number" name="phone" class="form-control" placeholder="[01]2-345678" required="required"></td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="detail">Please rate our site</td>
+					<td colspan="3" id="rank" class="detail">1=Bad 2=Not Bad 3=Good 4=Excellent</td>
+				</tr>
+				<tr>
+					<td colspan="3"><input type="range" name="rate" class="form-control rank" min="1" max="4"></td>
+				</tr>
+				<tr>
+					<td class="detail"><label for="date">Date</label></td>
+					<td><input type="date" id="date" name="date" class="form-control"  required="required"></td>
+					<td class="detail" id="detail_time"><label for="time">Time</label></td>
+					<td><input type="time" id="time" name="time" class="form-control" required="required"></td>
+				</tr>
+				<tr>
+					<td colspan="2" class="detail"><label for="text">How would u suggest to improve this website?</label></td>
+					<td colspan="2"><textarea name="feedback" id="text" class="form-control" placeholder="Suggests" rows="1" cols="20"></textarea></td>
+				</tr>
+			</table>
+			<div class="button1">
+				<input type="submit" class="form-control submit" value="Submit Feedback">
+			</div>
+			<div class="button2">
+				<input type="reset" class="form-control submit">
+			</div>
+		</form>
+	</div>
+	</fieldset>
+	<footer>
+		<p>&copy;<a href="thebest.html" title="Developers"><span id="teamname"> 2018 TheBest</span> </a>| Page developed by - Dickson - Wilson - Siaw Zhen - | Last updated: 29/6/2018 10:24am</p>
+	</footer>
+</article>
+</body>
+</html>
